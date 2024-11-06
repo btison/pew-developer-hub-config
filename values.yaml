@@ -55,12 +55,12 @@ upstream:
             token: ${GITLAB_TOKEN}          
       catalog:
         rules:
-          - allow: [Component, System, API, Resource, Location, Template]
+          - allow: [Component, System, API, Resource, Location, Template, Domain]
         locations: []
         providers:
           gitlab:
             envelop-catalog-entity:
-              host: {{ ocp4_workload_platform_engineering_workshop_gitlab_config_host }}
+              host: {{ gitlab_host }}
               filters:
                 branch: main
               skipForkedRepos: true
