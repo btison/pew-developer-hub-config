@@ -222,6 +222,8 @@ upstream:
             target: https://{{ gitlab_host }}/rhdh/import-existing-app-template/-/blob/main/template.yaml
           - type: url
             target: https://{{ gitlab_host }}/rhdh/rhdh-entities/-/blob/main/locations.yaml
+          - type: url
+            target: https://{{ gitlab_host }}/rhdh/template-developer-self-service/-/blob/main/location.yaml
         providers:
 
           ## --- GITLAB_CATALOG_PROVIDER ---
